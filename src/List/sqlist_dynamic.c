@@ -1,8 +1,9 @@
 #include "../../include/List/SqListMalloc.h"
+#include <stdlib.h>
 
 //初始化
 void InitList(SqListMalloc *L){
-    L->data=(SqListMalloc*)malloc(sizeof(SqListMalloc)*Initsize);
+    L->data=(int*)malloc(sizeof(int)*Initsize);
     L->length=0;
     L->MaxSize=Initsize;
 }
