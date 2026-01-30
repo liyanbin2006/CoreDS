@@ -3,6 +3,8 @@
 
 #include <stdbool.h>
 
+#define Initsize 100  //表长初定义
+
 typedef struct {
     int* data;      // 存放数据的地址
     int length;             // 顺序表现有的长度
